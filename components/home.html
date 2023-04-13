@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>THE BIG PROJECT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.css">
 
@@ -13,65 +14,113 @@
 <body>
 
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="x">
-            <div class="navbar-header">
-              <a href="Home.html">
-                <img class="img_logo" src="../img/jujulogo.png" alt="le logo de juju">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img class="img_logo" src="../img/jujulogo.png" alt="le logo de juju">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Acceuil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#profil">Profil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../components/CV.html">CV</a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link " href="../components/game.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Jeux
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../components/project.html">Projet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Conctact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="parallax parallax1">
+      <div class="container">
+        <!-- <h1 class="big_title">Bienvenue sur Le BIG PROJECT !</h1> -->
+        <h2 class="dev_name">Justin GENDRON</h2>
+        <h2 class="student_name">Elève - Guardia Cybersecurity School</h2>
+
+        <div class="center">
+          <a href="#profil">
+            <button type="button" class="btn btn-outline-dark btn_who"> QUI SUIS-JE ?</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="Profil" id="profil">
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <h2 class="center about_me">A PROPOS DE MOI</h2>
+          </div>
+        </div>
+
+        <div class="row description_profil">
+          <div class="col-sm-12 col-md-6 center">
+            <img class="img_profile " src="../img/photo_profile.jpg" alt="la photo de profil de juju">
+          </div>
+
+          <div class="col-sm-12 col-md-6 center">
+            <p class="description">Bonjour tout le monde je m'appelle Justin GENDRON, j'ai 19ans 
+              <br>
+                Je suis actuellement en 1ère année à la Guardia Cybersecurity School.
+              <br>
+                J'ai fait un BAC général avec les enseignements de spécialité mathématique et Physique-chimie 
+              <br>
+                Après ceci j'ai effectué une année d'alternance au CESI à Villeurbanne en développement informatique.
+              <br>
+                et actuellement j'ai intégré la Guardia pour étudier la Cybersecurité !! 
+            
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-12 center btn_CV">
+              <a href="../components/CV.html">
+                <button type="button" class="btn btn-outline-dark">VOIR MON CV</button>
               </a>
             </div>
-          
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Accueil</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Jeux <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Jeux 1</a></li>
-                  <li><a href="#">Jeux 2</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">CV</a></li>
-              <li><a href="#">Projets</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-
           </div>
-
         </div>
-      </nav>
-    
-      <div class="parallax parallax1">
-        <div class="container ">
-          <h1 class="big_title">Bienvenue sur Le BIG PROJECT ! </h1>
-        </div>
-
-        <div class="test">
-
-        </div>
-        <div class="container">
-          <div class="row">
-            <div></div>
-            <div class="col-md-6 col-sm-12">
-              
-            </div>
-            <div class="col-md-6 col-sm-12">
-
-            </div>
-          </div>
-        
-        </div>
-      </div>
 
       </div>
+    </div>
+
+    <div class="game">
+      <div class="container">
+
+      </div>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
 
 </body>
 

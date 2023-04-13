@@ -1,22 +1,28 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 1;
+
+}
+
 .parallax {
-    height: 70em;
+    height: 65em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
 
   .parallax1 {
-    background-image: url("../img/img_back.jpg");
+    background-image: url("../img/bg-dev-web-01-1.jpg");
   }
 
 .img_logo{
     width: 80px;
 }
-.navbar{
-    position: fixed;
-    width: 100%;
-}
+
 .x{
     display: flex;
     flex-direction: row;
@@ -24,14 +30,38 @@
     justify-content: space-between;
 }
 
-.big_title{
+.dev_name{
     text-align: center;
     color: aliceblue;
     position: static;
-    margin-top: 100px;
+    font-size: xxx-large;
+    position: relative;
+    top: 400px;
+
 }
 
-/* media queries pour les boutons et titres  */
+.student_name{
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    top: 400px;
+}
+
+.btn_who{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    position: relative;
+    top: 480px;
+    z-index: auto;
+
+}
+
+.center{
+    text-align: center;
+}
+
+/* media queries pour la navbar */
 @media (max-width: 600px) {
     .x{
         display: flex;
@@ -48,7 +78,79 @@
     }
 }
 
+/* Partie profile de l'accueil */
 .img_profile{
-    width: 50%;
+    width: 35%;
+}
+
+.Profil{
+    height: 42em;
+    color: rgb(0, 0, 0);
+}
+
+/* media queries pour la navbar */
+
+@media (max-width: 600px) {
+    .Profil{
+        height: 44em;
+    }
+}
+
+@media (min-width: 601px) {
+    .Profil{
+        height: 55em;
+    }
+}
+
+@media (min-width: 800px) {
+    .Profil{
+        height: 45em;
+
+    }
+}
+
+@media (min-width: 800px) {
+    .Profil{
+        height: 45em;
+
+    }
+}
+
+@media (min-width: 900px) {
+    .Profil{
+        height: 45em;
+
+    }
+}
+.about_me{
+    color: black;
+    position: relative;
+    top: 100px;
+}
+
+.description_profil{
+    position: relative;
+    top: 150px;
+}
+
+.description{
+    font-size: larger;
+    text-align: justify;
+    position: relative;
+    top: 50px;
+}
+
+.btn_CV{
+    position: relative;
+    top: 70px;
+}
+
+
+/* Partie jeux de la page d'acceuil */
+.game{
+    background-image: url("../img/img_back\(1\).jpg");
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
